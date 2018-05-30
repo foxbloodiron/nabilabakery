@@ -117,6 +117,7 @@
         // Used when bJQueryUI is true
         $.extend($.fn.dataTableExt.oJUIClasses, extensions);
 
+        console.log('a');
 
         $('.data-table').dataTable({
               "responsive":true,
