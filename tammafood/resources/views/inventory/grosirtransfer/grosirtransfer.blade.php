@@ -5,12 +5,12 @@
                 <!--BEGIN TITLE & BREADCRUMB PAGE-->
                 <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
                     <div class="page-header pull-left" style="font-family: 'Raleway', sans-serif;">
-                        <div class="page-title">Retail Transfer</div>
+                        <div class="page-title">Grosir Transfer</div>
                     </div>
                     <ol class="breadcrumb page-breadcrumb pull-right" style="font-family: 'Raleway', sans-serif;">
                         <li><i class="fa fa-home"></i>&nbsp;<a href="{{ url('/home') }}">Home</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
                         <li><i></i>&nbsp;Inventory&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
-                        <li class="active">Retail Transfer</li>
+                        <li class="active">Grosir Transfer</li>
                     </ol>
                     <div class="clearfix">
                     </div>
@@ -26,18 +26,18 @@
                           </div>
 
                           <ul id="generalTab" class="nav nav-tabs">
-                            <li class="active"><a href="#alert-tab" data-toggle="tab">List Retail</a></li>
-                            <li><a href="#penerimaan_transfer" data-toggle="tab">Penerimaan Transfer</a></li>
+                            <li class="active"><a href="#persetujuan_transfer" data-toggle="tab">Persetujuan transfer</a></li>
+                            <li><a href="#transfer_ke_retail" data-toggle="tab">Transfer Retail</a></li>
                             <!-- <li><a href="#label-badge-tab" data-toggle="tab">3</a></li> -->
                           </ul>
-                          @include('inventory.retailtransfer.tambah_retailtransfer')
+                          @include('inventory.grosirtransfer.tambah_grosirtransfer')
                           <div id="generalTabContent" class="tab-content responsive">
                               <!-- alert tab -->
-                              @include('inventory.retailtransfer.listretail')
+                              @include('inventory.grosirtransfer.persetujuantransfer')
                               <!-- /div alert-tab -->
 
                               <!-- div penerimaan_barang -->
-                              @include('inventory.retailtransfer.penerimaantransfer')
+                              @include('inventory.grosirtransfer.transfer_ke_retail')
                               <!--/div penerimaan_barang -->
 
                                 <!-- div label-badge-tab -->

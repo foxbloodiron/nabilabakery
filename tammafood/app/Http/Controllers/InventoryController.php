@@ -36,6 +36,10 @@ class InventoryController extends Controller
     {
         return view('inventory/retailtransfer/retailtransfer');
     }
+    public function grosirtransfer()
+    {
+        return view('inventory/grosirtransfer/grosirtransfer');
+    }
 
     public function cust()
     {

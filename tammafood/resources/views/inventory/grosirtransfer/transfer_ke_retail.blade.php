@@ -1,4 +1,4 @@
-<div id="alert-tab" class="tab-pane fade in active">
+<div id="transfer_ke_retail" class="tab-pane fade">
                                  
   <div class="row">
     <div class="col-md-12 col-sm-12 col-xs-12" align="right">

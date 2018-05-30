@@ -86,6 +86,7 @@ Route::get('not-allowed', 'mMemberController@notAllowed');
 	Route::get('/inventory/b_digunakan/tambah_barang', 'InventoryController@tambah_barang');
 	Route::get('/inventory/stockopname/tambah_opname', 'InventoryController@tambah_opname');
 	Route::get('/inventory/retailtransfer/retailtransfer', 'InventoryController@retailtransfer');
+	Route::get('/inventory/grosirtransfer/grosirtransfer', 'InventoryController@grosirtransfer');
 
 	Route::get('/inventory/POSretail/transfer', 'transferItemController@index');
 	Route::get('/inventory/POSgrosir/transfer', 'transferItemGrosirController@indexGrosir');
