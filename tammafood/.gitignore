@@ -1,0 +1,9 @@
+
+
+.env.*.php
+.env.php
+.env
+Homestead.yaml
+Homestead.json
+
+assets.rar
