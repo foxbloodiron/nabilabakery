@@ -1,5 +1,6 @@
 
 
+tammafood/storage/framework/views/*
 
 .env.*.php
 .env.php
