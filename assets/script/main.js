@@ -11,10 +11,10 @@ $(function () {
     $(window).bind("load resize", function () {
         if ($(this).width() < 768) {
 
-            $('div.sidebar-collapse').addClass('collapse in');
+            $('div.sidebar-collapse').addClass('collapse');
         } else {
-           
-            $('div.sidebar-collapse').removeClass('collapse in');
+            alert('besar')
+            $('div.sidebar-collapse').removeClass('collapse');
             $('div.sidebar-collapse').css('height', 'auto');
         }
         if($('body').hasClass('sidebar-icons')){
@@ -23,7 +23,6 @@ $(function () {
             $('#menu-toggle').show();
         }
     });
-
     //END MENU SIDEBAR
 
     //BEGIN TOPBAR DROPDOWN

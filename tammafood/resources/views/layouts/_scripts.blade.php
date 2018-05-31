@@ -1,15 +1,22 @@
+{{-- LOADING --}}
+    <script src="{{ asset ('assets/js/date-uk.js') }}"></script>
+    <script src="{{ asset ('assets/js/dist/spin.min.js') }}"></script>
+    <script src="{{ asset ('assets/js/dist/ladda.min.js') }}"></script>
+{{-- end load --}}
+    <script src="{{ asset ('assets/js/date-uk.js') }}"></script>
+    <script src="{{ asset ('assets/js/my.js') }}"></script>
+    <script src="{{ asset ('assets/js/js_ssb.js') }}"></script>
     <script src="{{ asset ('assets/script/jquery-1.10.2.min.js') }}"></script>
     <script src="{{ asset ('assets/script/jquery-migrate-1.2.1.min.js') }}"></script>
     <script src="{{ asset ('assets/script/jquery-ui.js') }}"></script>
     <script src="{{ asset ('assets/script/bootstrap-datepicker.js') }}"></script>
     <script src="{{ asset ('assets/script/bootstrap.min.js') }}"></script>
     <script src="{{ asset ('assets/script/bootstrap-hover-dropdown.js') }}"></script>
-    <script src="{{ asset ('assets/script/html5shiv.js') }}"></script>
+    {{-- <script src="{{ asset ('assts/script/html5shiv.js') }}"></script> --}}
     <script src="{{ asset ('assets/script/respond.min.js') }}"></script>
     <script src="{{ asset ('assets/script/jquery.metisMenu.js') }}"></script>
     <script src="{{ asset ('assets/script/jquery.slimscroll.js') }}"></script>
     <script src="{{ asset ('assets/script/jquery.cookie.js') }}"></script>
-    <script src="{{ asset ('assets/js/js_ssb.js') }}"></script>
     {{-- <script src="{{ asset ('assets/script/icheck.min.js') }}"></script> --}}
     <script src="{{ asset ('assets/script/custom.min.js') }}"></script>
     <script src="{{ asset ('assets/script/jquery.news-ticker.js') }}"></script>
@@ -31,12 +38,11 @@
     <script src="{{ asset ('assets/script/jquery.dataTables.js') }}"></script>
     <script src="{{ asset ('assets/script/jquery.dataTables.min.js') }}"></script>
     <script src="{{ asset ('assets/toastr/toastr.min.js') }}"></script>
-    <script src="{{ asset ('assets/bootstrap-live-search/js/bootstrap-select.js') }}"></script>
-    <script src="{{ asset ('assets/sliptree-multiselect/bootstrap-tokenfield.js') }}"></script>
-    <script src="{{ asset ('assets/sweetalert/dist/sweetalert.min.js') }}"></script>
     <script src="{{ asset ('assets/sweetalert/dist/sweetalert.js') }}"></script>
+    <script src="{{ asset ('assets/sweetalert/dist/sweetalert.min.js') }}"></script>
 
-    <!--LOADING SCRIPTS FOR CHARTS-->
+
+    <!--LOADING SCRIPTS FOR CHAfRTS-->
     <script src="{{ asset ('assets/script/highcharts.js') }}"></script>
     <script src="{{ asset ('assets/script/data.js') }}"></script>
     <script src="{{ asset ('assets/script/drilldown.js') }}"></script>
@@ -44,69 +50,11 @@
     <script src="{{ asset ('assets/script/highcharts-more.js') }}"></script>
     <script src="{{ asset ('assets/script/charts-highchart-pie.js') }}"></script>
     <script src="{{ asset ('assets/script/charts-highchart-more.js') }}"></script>
-
-
-
     <!--CORE JAVASCRIPT-->
     <script src="{{ asset ('assets/script/main.js') }}"></script>
 
-
-
     <script type="text/javascript">
         var baseUrl = '{{url('/')}}';
-    </script>
-
-    <script type="text/javascript">
-        function numberOnly(){
-        // Allow: backspace, delete, tab, escape, enter and .
-        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
-             // Allow: Ctrl/cmd+A
-            (e.keyCode == 65 && (e.ctrlKey === true || e.metaKey === true)) ||
-             // Allow: Ctrl/cmd+C
-            (e.keyCode == 67 && (e.ctrlKey === true || e.metaKey === true)) ||
-             // Allow: Ctrl/cmd+X
-            (e.keyCode == 88 && (e.ctrlKey === true || e.metaKey === true)) ||
-             // Allow: home, end, left, right
-            (e.keyCode >= 35 && e.keyCode <= 39)) {
-                 // let it happen, don't do anything
-                 return;
-        }
-        // Ensure that it is a number and stop the keypress
-        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
-            e.preventDefault();
-        }
-
-        }
-        $(document).ready(function(){
-            var extensions = {
-         "sFilterInput": "form-control input-sm",
-        "sLengthSelect": "form-control input-sm"
-    }
-    // Used when bJQueryUI is false
-    $.extend($.fn.dataTableExt.oStdClasses, extensions);
-    // Used when bJQueryUI is true
-    $.extend($.fn.dataTableExt.oJUIClasses, extensions);
-
-            $("input[type='number']").keydown(function (e) {
-        // Allow: backspace, delete, tab, escape, enter and .
-        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
-             // Allow: Ctrl/cmd+A
-            (e.keyCode == 65 && (e.ctrlKey === true || e.metaKey === true)) ||
-             // Allow: Ctrl/cmd+C
-            (e.keyCode == 67 && (e.ctrlKey === true || e.metaKey === true)) ||
-             // Allow: Ctrl/cmd+X
-            (e.keyCode == 88 && (e.ctrlKey === true || e.metaKey === true)) ||
-             // Allow: home, end, left, right
-            (e.keyCode >= 35 && e.keyCode <= 39)) {
-                 // let it happen, don't do anything
-                 return;
-        }
-        // Ensure that it is a number and stop the keypress
-        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
-            e.preventDefault();
-        }
-    });
-        });
 
         var extensions = {
              "sFilterInput": "form-control input-sm",
@@ -116,8 +64,6 @@
         $.extend($.fn.dataTableExt.oStdClasses, extensions);
         // Used when bJQueryUI is true
         $.extend($.fn.dataTableExt.oJUIClasses, extensions);
-
-
         $('#data').dataTable({
               "responsive":true,
 
@@ -135,52 +81,60 @@
                         "next": "Selanjutnya",
                      }
               }
+              });
+              $('#data2').dataTable({
+                    "responsive":true,
 
-            });
-        $('#data2').dataTable({
-              "responsive":true,
+                    "pageLength": 10,
+                  "lengthMenu": [[10, 20, 50, - 1], [10, 20, 50, "All"]],
+                  "language": {
+                      "searchPlaceholder": "Cari Data",
+                      "emptyTable": "Tidak ada data",
+                      "sInfo": "Menampilkan _START_ - _END_ Dari _TOTAL_ Data",
+                      "sSearch": '<i class="fa fa-search"></i>',
+                      "sLengthMenu": "Menampilkan &nbsp; _MENU_ &nbsp; Data",
+                      "infoEmpty": "",
+                      "paginate": {
+                              "previous": "Sebelumnya",
+                              "next": "Selanjutnya",
+                           }
+                    }
+                    });
+                    $('#data3').dataTable({
+                          "responsive":true,
 
-              "pageLength": 10,
-            "lengthMenu": [[10, 20, 50, - 1], [10, 20, 50, "All"]],
-            "language": {
-                "searchPlaceholder": "Cari Data",
-                "emptyTable": "Tidak ada data",
-                "sInfo": "Menampilkan _START_ - _END_ Dari _TOTAL_ Data",
-                "sSearch": '<i class="fa fa-search"></i>',
-                "sLengthMenu": "Menampilkan &nbsp; _MENU_ &nbsp; Data",
-                "infoEmpty": "",
-                "paginate": {
-                        "previous": "Sebelumnya",
-                        "next": "Selanjutnya",
-                     }
-              }
+                          "pageLength": 10,
+                        "lengthMenu": [[10, 20, 50, - 1], [10, 20, 50, "All"]],
+                        "language": {
+                            "searchPlaceholder": "Cari Data",
+                            "emptyTable": "Tidak ada data",
+                            "sInfo": "Menampilkan _START_ - _END_ Dari _TOTAL_ Data",
+                            "sSearch": '<i class="fa fa-search"></i>',
+                            "sLengthMenu": "Menampilkan &nbsp; _MENU_ &nbsp; Data",
+                            "infoEmpty": "",
+                            "paginate": {
+                                    "previous": "Sebelumnya",
+                                    "next": "Selanjutnya",
+                                 }
+                          }
+                          });
 
-            });
-        $('#data3').dataTable({
-              "responsive":true,
-
-              "pageLength": 10,
-            "lengthMenu": [[10, 20, 50, - 1], [10, 20, 50, "All"]],
-            "language": {
-                "searchPlaceholder": "Cari Data",
-                "emptyTable": "Tidak ada data",
-                "sInfo": "Menampilkan _START_ - _END_ Dari _TOTAL_ Data",
-                "sSearch": '<i class="fa fa-search"></i>',
-                "sLengthMenu": "Menampilkan &nbsp; _MENU_ &nbsp; Data",
-                "infoEmpty": "",
-                "paginate": {
-                        "previous": "Sebelumnya",
-                        "next": "Selanjutnya",
-                     }
-              }
-
-            });
-            $('.datepicker').datepicker({
-              format: "mm/yyyy",
-              viewMode: "months",
-              minViewMode: "months"
-            });
-            $('.datepicker2').datepicker({
-              format:"dd/mm/yyyy"
-            });
+              $('.datepicker').datepicker({
+                format: "mm",
+                viewMode: "months",
+                minViewMode: "months",
+                format:"dd/mm/yyyy"
+              });
+              $('.datepicker2').datepicker({
+                format: "mm",
+                viewMode: "months",
+                minViewMode: "months",
+                format:"dd/mm/yyyy"
+              });
+              $('.datepicker3').datepicker({
+                format: "mm",
+                viewMode: "months",
+                minViewMode: "months",
+                format:"dd/mm/yyyy"
+              });
     </script>
