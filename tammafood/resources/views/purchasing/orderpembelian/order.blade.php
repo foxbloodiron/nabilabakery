@@ -69,8 +69,8 @@
                                               <td><span class="label label-success">Di Setujui</span></td>
                                               <td>
                                                 <button class="btn btn-warning btn-sm" title="Edit"><i class="fa fa-pencil"></i></button>
-                                                <button class="btn btn-danger btn-sm" title="Hapus"><i class="fa fa-trash-o"></i></button>
-                                                <button data-toggle="modal" data-target="#detail" class="btn-link">Detail</button>
+                                                <button class="btn btn-danger btn-sm" title="Hapus" onclick="klik()"><i class="fa fa-trash-o"></i></button>
+                                                <button data-toggle="modal" data-target="#detail" class="btn btn-info btn-sm"><em class="fa fa-eye"></em> </button>
                                               </td>
                                             </tr>
                                             <tr>
@@ -84,8 +84,8 @@
                                               <td><span class="label label-success">Di Setujui</span></td>
                                               <td>
                                                 <button class="btn btn-warning btn-sm" title="Edit"><i class="fa fa-pencil"></i></button>
-                                                <button class="btn btn-danger btn-sm" title="Hapus"><i class="fa fa-trash-o"></i></button>
-                                                <button data-toggle="modal" data-target="#detail" class="btn-link">Detail</button>
+                                                <button class="btn btn-danger btn-sm" title="Hapus" onclick="klik()"><i class="fa fa-trash-o"></i></button>
+                                                <button data-toggle="modal" data-target="#detail" class="btn btn-info btn-sm"><em class="fa fa-eye"></em> </button>
                                               </td>
                                             </tr>
                                             <tr>
@@ -99,8 +99,8 @@
                                               <td><span class="label label-success">Di Setujui</span></td>
                                               <td>
                                                 <button class="btn btn-warning btn-sm" title="Edit"><i class="fa fa-pencil"></i></button>
-                                                <button class="btn btn-danger btn-sm" title="Hapus"><i class="fa fa-trash-o"></i></button>
-                                                <button data-toggle="modal" data-target="#detail" class="btn-link">Detail</button>
+                                                <button class="btn btn-danger btn-sm" title="Hapus" onclick="klik()"><i class="fa fa-trash-o"></i></button>
+                                                <button data-toggle="modal" data-target="#detail" class="btn btn-info btn-sm"><em class="fa fa-eye"></em> </button>
                                               </td>
                                             </tr>
                                           </tbody>
@@ -140,4 +140,28 @@
                     </div>
                   </div>
 
+@endsection
+@section('extra_scripts')
+<script type="text/javascript">
+function klik(){
+  swal({
+  title: "Apa anda yakin?",
+  text: "Data Yang Dihapus Tidak Dapat Dikembalikan",
+  type: "warning",
+  showCancelButton: true,
+  confirmButtonClass: "btn-danger",
+  confirmButtonText: "Yes, delete it!",
+  cancelButtonText: "Cancel",
+  closeOnConfirm: false,
+  closeOnCancel: false
+  },
+  function(isConfirm) {
+  if (isConfirm) {
+  swal("Deleted!", "Your imaginary data has been delete.", "success");
+  } else {
+  swal("Cancelled", "Your imaginary data is safe :)", "error");
+  }
+  });
+}
+</script>
 @endsection
