@@ -75,7 +75,7 @@
                                       </div>
 
                                       <div class="table-responsive" style="margin-top: 15px;">
-                                        <table class="table tabelan table-bordered" id="data">
+                                        <table class="table tabelan table-bordered data-table">
                                           <thead>
                                             <th>No</th>
                                             <th>Tanggal Belanja</th>
