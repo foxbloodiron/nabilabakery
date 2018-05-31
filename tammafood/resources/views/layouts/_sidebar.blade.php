@@ -20,7 +20,7 @@
                     <li class="dropdown"><a data-hover="dropdown" href="#" class="dropdown-toggle"><i class="fa fa-tasks fa-fw"></i><span class="badge badge-blue">8</span></a>
 
                     </li>
-                    <li class="dropdown topbar-user"><a data-hover="dropdown" href="#" class="dropdown-toggle"><img src="{{ asset('assets/images/avatar/48.jpg')}}" alt="" class="img-responsive img-circle">&nbsp;<span class="hidden-xs">{{ Auth::user()->name }}</span>&nbsp;<span class="caret"></span></a>
+                    <li class="dropdown topbar-user"><a data-hover="dropdown" href="#" class="dropdown-toggle"><img src="{{ asset('assets/images/avatar/48.jpg')}}" alt="" class="img-responsive img-circle">&nbsp;<span class="hidden-xs">{{ Auth::user()->m_name }}</span>&nbsp;<span class="caret"></span></a>
                         <ul class="dropdown-menu dropdown-user pull-right">
                             <li><a href="#"><i class="fa fa-user"></i>My Profile</a></li>
                             <li><a href="#"><i class="fa fa-calendar"></i>My Calendar</a></li>
@@ -106,10 +106,47 @@
                                 </li>
                                 @endif
 
+<<<<<<< HEAD
                                  @if(Auth::user()->punyaAkses('Data Jenis Produksi','ma_read'))
                                 <li class="{{ Request::is('master/datajenis/jenis') ? 'active' : '' || Request::is('master/datajenis/*') ? 'active' : '' }}"><a href="{{ url('/master/datajenis/jenis') }}"><span class="submenu-title">Data Jenis Produksi</span><span class="hidden">Master</span></a>
                                 </li>
                                 @endif
+=======
+                    <li  class="menu-primer {{Request::is('inventory') ? 'active' : '' || Request::is('inventory/*') ? 'active' : '' }}"><a href="#"><i class="fa fa-desktop fa-fw">
+                        <div class="icon-bg bg-green"></div>
+                        </i><span class="menu-title">Inventory</span><span class="fa arrow"></span>
+                        <!-- for filter -->
+                        <span class="hidden">
+                            Penerimaan Barang Suplier , 
+                            Penerimaan Barang Hasil Produksi , 
+                            Penerimaan Barang Return Customer , 
+                            Barang Digunakan , 
+                            Stock Opname
+                            Retail Transfer
+                            Grosir Transfer
+                        </span>
+                        <!-- =========== -->
+                    </a>
+                        <ul class="nav nav-second-level">
+                            <li class="menu-sekunder {{ Request::is('inventory/p_suplier/suplier') ? 'active' : '' || Request::is('inventory/p_suplier/*') ? 'active' : '' }}"><a href="{{ url('/inventory/p_suplier/suplier') }}"><span class="submenu-title">Penerimaan Barang Suplier</span><span class="hidden">Inventory</span></a>
+                            </li>
+                            <li class="menu-sekunder {{ Request::is('inventory/p_hasilproduksi/produksi') ? 'active' : '' || Request::is('inventory/p_hasilproduksi/*') ? 'active' : '' }}"><a href="{{ url('/inventory/p_hasilproduksi/produksi') }}"><span class="submenu-title">Penerimaan Barang Hasil Produksi</span><span class="hidden">Inventory</span></a>
+                            </li>
+                            <li class="menu-sekunder {{ Request::is('inventory/p_returncustomer/cust') ? 'active' : '' || Request::is('inventory/p_returncustomer/*') ? 'active' : '' }}"><a href="{{ url('/inventory/p_returncustomer/cust') }}"><span class="submenu-title">Penerimaan Barang Return Customer</span><span class="hidden">Inventory</span></a>
+                            </li>
+                            <li class="menu-sekunder {{ Request::is('inventory/b_digunakan/barang') ? 'active' : '' || Request::is('inventory/b_digunakan/*') ? 'active' : '' }}"><a href="{{ url('/inventory/b_digunakan/barang') }}"><span class="submenu-title">Barang Digunakan</span><span class="hidden">Inventory</span></a>
+                            </li>
+                            <li class="menu-sekunder {{ Request::is('inventory/stockopname/opname') ? 'active' : '' || Request::is('inventory/stockopname/*') ? 'active' : '' }}"><a href="{{ url('/inventory/stockopname/opname') }}"><span class="submenu-title">Stock Opname</span><span class="hidden">Inventory</span></a>
+                            </li>
+                            <li class="menu-sekunder {{ 
+                                Request::is('inventory/retailtransfer/*') ? 'active' : '' }}"><a href="{{ url('/inventory/retailtransfer/retailtransfer') }}"><span class="submenu-title">Retail Transfer</span><span class="hidden">Inventory</span></a>
+                            </li>
+                            <li class="menu-sekunder {{ 
+                                Request::is('inventory/grosirtransfer/*') ? 'active' : '' }}"><a href="{{ url('/inventory/grosirtransfer/grosirtransfer') }}"><span class="submenu-title">Grosir Transfer</span><span class="hidden">Inventory</span></a>
+                            </li>
+                        </ul>
+                    </li>
+>>>>>>> cbffec133db4f1756426144fc52ba2c1ec83baf9
 
                                  @if(Auth::user()->punyaAkses('Data Pegawai','ma_read'))
                                 <li class="{{ Request::is('master/datapegawai/pegawai') ? 'active' : '' || Request::is('master/datapegawai/*') ? 'active' : '' }}"><a href="{{ url('/master/datapegawai/pegawai') }}"><span class="submenu-title">Data Pegawai</span><span class="hidden">Master</span></a>

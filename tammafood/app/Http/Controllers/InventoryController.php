@@ -32,6 +32,15 @@ class InventoryController extends Controller
         return view('inventory/p_hasilproduksi/produksi');
     }
 
+    public function retailtransfer()
+    {
+        return view('inventory/retailtransfer/retailtransfer');
+    }
+    public function grosirtransfer()
+    {
+        return view('inventory/grosirtransfer/grosirtransfer');
+    }
+
     public function cust()
     {
         return view('inventory/p_returncustomer/cust');

@@ -64,7 +64,14 @@
         $.extend($.fn.dataTableExt.oStdClasses, extensions);
         // Used when bJQueryUI is true
         $.extend($.fn.dataTableExt.oJUIClasses, extensions);
+<<<<<<< HEAD
         $('#data').dataTable({
+=======
+
+        console.log('a');
+
+        $('.data-table').dataTable({
+>>>>>>> cbffec133db4f1756426144fc52ba2c1ec83baf9
               "responsive":true,
 
               "pageLength": 10,
@@ -81,6 +88,7 @@
                         "next": "Selanjutnya",
                      }
               }
+<<<<<<< HEAD
               });
               $('#data2').dataTable({
                     "responsive":true,
@@ -137,4 +145,17 @@
                 minViewMode: "months",
                 format:"dd/mm/yyyy"
               });
+=======
+
+            });
+        
+            $('.datepicker').datepicker({
+              format: "mm/yyyy",
+              viewMode: "months",
+              minViewMode: "months"
+            });
+            $('.datepicker2').datepicker({
+              format:"dd/mm/yyyy"
+            });
+>>>>>>> cbffec133db4f1756426144fc52ba2c1ec83baf9
     </script>
