@@ -62,6 +62,7 @@ Route::get('not-allowed', 'mMemberController@notAllowed');
 
 	Route::get('/master/databarang/barang', 'MasterController@barang');
 	Route::get('/master/databarang/tambah_barang', 'MasterController@tambah_barang');
+  Route::get('/master/databarang/edit_barang', 'MasterController@edit_barang');
 
 	/*Purchasing*/
 	Route::get('/purchasing/orderpembelian/order', 'PurchasingController@order');
