@@ -44,8 +44,10 @@ Route::get('not-allowed', 'mMemberController@notAllowed');
 	/*---------*/
 	Route::get('/master/databaku/baku', 'MasterController@baku');
 	Route::get('/master/databaku/tambah_baku', 'MasterController@tambah_baku');
+  Route::get('/master/databaku/edit_baku', 'MasterController@edit_baku');
 	Route::get('/master/datajenis/jenis', 'MasterController@jenis');
 	Route::get('/master/datajenis/tambah_jenis', 'MasterController@tambah_jenis');
+  Route::get('/master/datajenis/edit_jenis', 'MasterController@edit_jenis');
 	Route::get('/master/datapegawai/pegawai', 'MasterController@pegawai');
 	Route::get('/master/datakeuangan/keuangan', 'MasterController@keuangan');
 	Route::get('/master/datatransaksi/transaksi', 'MasterController@transaksi');
@@ -53,7 +55,10 @@ Route::get('not-allowed', 'mMemberController@notAllowed');
 	Route::get('/master/datasuplier/edit_suplier', 'MasterController@edit_suplier');
 	Route::get('/master/datacust/tambah_cust', 'MasterController@tambah_cust');
 	Route::get('/master/datatransaksi/tambah_transaksi', 'MasterController@tambah_transaksi');
+  Route::get('/master/datatransaksi/edit_transaksi', 'MasterController@edit_transaksi');
 	Route::get('/master/datapegawai/tambah_pegawai', 'MasterController@tambah_pegawai');
+  Route::get('/master/datapegawai/edit_pegawai', 'MasterController@edit_pegawai');
+
 
 	Route::get('/master/databarang/barang', 'MasterController@barang');
 	Route::get('/master/databarang/tambah_barang', 'MasterController@tambah_barang');
@@ -382,4 +387,3 @@ Route::get('not-allowed', 'mMemberController@notAllowed');
 	Route::get('/penjualan/mutasistok/data-item', 'mutationStoreController@dataItem');
 
 	//thoriq
-
