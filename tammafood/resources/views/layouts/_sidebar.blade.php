@@ -189,7 +189,14 @@
                         <div class="icon-bg bg-green"></div>
                         </i><span class="menu-title">Produksi</span><span class="fa arrow"></span>
                         <!-- for filter -->
-                        <span class="hidden">Monitoring Order & Stock , Rencana Produksi , Manajemen SPK , Manajemen Output Produksi , Manajemen Sampah (Waste)</span>
+                        <span class="hidden">
+                          Monitoring Order & Stock , 
+                          Rencana Produksi , 
+                          Manajemen SPK , 
+                          Manajemen Output Produksi , 
+                          Manajemen Sampah (Waste)
+                          Pembuatan Surat Jalan
+                        </span>
                         <!-- ========== -->
                     </a>
                         <ul class="nav nav-second-level">
@@ -199,11 +206,9 @@
                             </li>
                             <li class="menu-sekunder {{ Request::is('produksi/spk/spk') ? 'active' : '' || Request::is('produksi/spk/*') ? 'active' : '' }}"><a href="{{ url('/produksi/spk/spk') }}"><span class="submenu-title">Manajemen SPK</span><span class="hidden">Produksi</span></a>
                             </li>
-
-
-                            <!-- <li class="menu-sekunder {{ Request::is('produksi/produksi/produksi2') ? 'active' : '' || Request::is('produksi/produksi/*') ? 'active' : '' }}"><a href="{{ url('/produksi/produksi/produksi2') }}"><span class="submenu-title">Manajemen Produksi</span><span class="hidden">Produksi</span></a>
-                            </li> -->
                             <li class="menu-sekunder {{ Request::is('produksi/o_produksi/produksi3') ? 'active' : '' || Request::is('produksi/o_produksi/*') ? 'active' : '' }}"><a href="{{ url('/produksi/o_produksi/produksi3') }}"><span class="submenu-title">Manajemen Output Produksi</span><span class="hidden">Produksi</span></a>
+                            </li>
+                            <li class="menu-sekunder {{ Request::is('produksi/suratjalan/*') ? 'active' : '' }}"><a href="{{ url('/produksi/suratjalan/suratjalan') }}"><span class="submenu-title">Pembuatan Surat Jalan</span><span class="hidden">Produksi</span></a>
                             </li>
                             <li class="menu-sekunder {{ Request::is('produksi/waste/waste') ? 'active' : '' || Request::is('produksi/waste/*') ? 'active' : '' }}"><a href="{{ url('/produksi/waste/waste') }}"><span class="submenu-title">Manajemen Sampah (Waste)</span><span class="hidden">Produksi</span></a>
                             </li>

@@ -37,6 +37,11 @@ class ProduksiController extends Controller
         return view('/produksi/spk/spk');
     }
 
+     public function suratjalan()
+    {
+        return view('/produksi/suratjalan/suratjalan');
+    }
+
      public function baku()
     {
         return view('/produksi/bahanbaku/baku');
