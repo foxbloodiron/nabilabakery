@@ -172,6 +172,13 @@ class MasterController extends Controller
 
         return view('/master/datasuplier/tambah_suplier');
     }
+    public function edit_suplier()
+ {
+
+
+        return view('/master/datasuplier/edit_suplier');
+    
+    }
 
 
     public function tambah_cust()
