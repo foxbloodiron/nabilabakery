@@ -100,6 +100,7 @@ Route::get('not-allowed', 'mMemberController@notAllowed');
 	Route::get('/produksi/produksi/produksi2', 'ProduksiController@produksi2');
 	Route::get('/produksi/o_produksi/produksi3', 'ProduksiController@produksi3');
 	Route::get('/produksi/waste/waste', 'ProduksiController@waste');
+	Route::get('/produksi/suratjalan/suratjalan', 'ProduksiController@suratjalan');
 	//Route::get('/produksi/monitoringprogress/monitoring', 'ProduksiController@monitoring');
 	Route::get('/produksi/o_produksi/tambah_produksi', 'ProduksiController@tambah_produksi');
 	//mahmud
