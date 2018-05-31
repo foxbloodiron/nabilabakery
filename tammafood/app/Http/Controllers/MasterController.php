@@ -38,7 +38,7 @@ class MasterController extends Controller
 
          $list_cust = Customer::all();
 
-        return view('master/datacust/cust', ['customer' => $list_cust], compact('list_cust'));     
+        return view('master/datacust/cust', ['customer' => $list_cust], compact('list_cust'));
     }
 
     public function barang()
@@ -50,13 +50,17 @@ class MasterController extends Controller
     {
         return view('master.databarang.tambah_barang');
     }
+    public function edit_barang()
+    {
+        return view('master.databarang.edit_barang');
+    }
 
      public function getdata()
     {
     $getdata = Customer::select('*')->get();
     return Datatables::of($getdata)
     ->addColumn('action', function ($getdata) {
-                    return'<div class="">    
+                    return'<div class="">
                                <a href="cust_edit/'.$getdata->id_cus_ut.'" class="btn btn-warning btn-sm" title="Edit"><i class="glyphicon glyphicon-pencil"></i></a>
                                <a href="cust_delete/'.$getdata->id_cus_ut.'" class="btn btn-danger btn-sm" title="Hapus"><i class="glyphicon glyphicon-trash"></i></a>
                           </div>   ';
@@ -67,14 +71,14 @@ class MasterController extends Controller
 
     public function cust_edit($id_cus_ut)
     {
-        
+
         $edit_cust = Customer::find($id_cus_ut);
-         
-        return view('/master/datacust/edit_cust', ['edit_cust' => $edit_cust] , compact('edit_cust', 'id_cus_ut'));       
+
+        return view('/master/datacust/edit_cust', ['edit_cust' => $edit_cust] , compact('edit_cust', 'id_cus_ut'));
     }
 
     public function cust_edit_proses(Request $request, $id_cus_ut)
-    {   
+    {
         try
         {
             $customer = Customer::findOrfail($id_cus_ut);
@@ -97,19 +101,19 @@ class MasterController extends Controller
 
     public function simpan_cust(Request $request)
     {
-        
+
         try{
-        
+
         $maxid = DB::Table('customer')->max('id_cus_ut');
 
-        //untuk +1 nilai yang ada,, jika kosong maka maxid = 1 , 
+        //untuk +1 nilai yang ada,, jika kosong maka maxid = 1 ,
 
         if ($maxid <= 0 || $maxid <= '') {
             $maxid  = 1;
         }else{
             $maxid += 1;
         }
-    
+
 
        $customer = new Customer;
        $customer->id_cus_ut = $maxid;
@@ -122,16 +126,16 @@ class MasterController extends Controller
         $customer->tipe_cust = $request->tipe_cust;
         $customer-> save();
         Session::flash('success', 'Customer berhasil ditambahkan!', 'Sukses!');
-        
+
     }catch(Exception $customer)
         {
             Session::flash('error', 'Customer gagal ditambahkan!', 'Gagal!');
             return redirect('/master/datacust/tambah_cust');
         }
-        
+
         return redirect('/master/datacust/cust');
     }
-   
+
 
      public function baku()
     {
@@ -143,6 +147,12 @@ class MasterController extends Controller
         return view('/master/databaku/tambah_baku');
     }
 
+    public function edit_baku()
+    {
+        return view('/master/databaku/edit_baku');
+    }
+
+
      public function jenis()
     {
         return view('/master/datajenis/jenis');
@@ -153,10 +163,20 @@ class MasterController extends Controller
         return view('/master/datajenis/tambah_jenis');
     }
 
+    public function edit_jenis()
+    {
+        return view('/master/datajenis/edit_jenis');
+    }
+
      public function pegawai()
     {
         return view('/master/datapegawai/pegawai');
     }
+
+    public function edit_pegawai()
+   {
+       return view('/master/datapegawai/edit_pegawai');
+   }
 
      public function keuangan()
     {
@@ -167,6 +187,12 @@ class MasterController extends Controller
     {
         return view('/master/datatransaksi/transaksi');
     }
+
+    public function edit_transaksi()
+   {
+       return view('/master/datatransaksi/edit_transaksi');
+   }
+
     public function tambah_suplier()
     {
 
@@ -177,7 +203,7 @@ class MasterController extends Controller
 
 
         return view('/master/datasuplier/edit_suplier');
-    
+
     }
 
 
@@ -189,19 +215,19 @@ class MasterController extends Controller
              //select max dari um_id dari table d_uangmuka
         $maxid = DB::Table('customer')->select('id_cus_ut')->max('id_cus_ut');
 
-        //untuk +1 nilai yang ada,, jika kosong maka maxid = 1 , 
+        //untuk +1 nilai yang ada,, jika kosong maka maxid = 1 ,
 
         if ($maxid <= 0 || $maxid <= '') {
           $maxid  = 1;
         }else{
           $maxid += 1;
         }
-        
+
         //jika kurang dari 100 maka maxid mimiliki 00 didepannya
         if ($maxid < 100) {
           $maxid = '00'.$maxid;
         }
-           $id_cust = 'CUS' . $month . $year . '/' . 'C001' . '/' .  $maxid;   
+           $id_cust = 'CUS' . $month . $year . '/' . 'C001' . '/' .  $maxid;
             return view('/master/datacust/tambah_cust', compact('id_cust'));
         }
 
@@ -209,7 +235,7 @@ class MasterController extends Controller
     {
 
          try{
-       
+
         $del = Customer::findOrFail($id_cus_ut);
 
         $del->delete();

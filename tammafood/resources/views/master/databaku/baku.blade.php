@@ -71,8 +71,8 @@
                                   <td>Rp. <?php echo number_format(2000,0,'','.'); ?>,-</td>
                                   <td>
                                     <div class="">
-                                      <a href="#" class="btn btn-warning btn-sm" title="Edit"><i class="glyphicon glyphicon-pencil"></i></a>
-                                      <a href="#" class="btn btn-danger btn-sm" title="Hapus"><i class="glyphicon glyphicon-trash"></i></a>
+                                      <a href="{{ url('master/databaku/edit_baku') }}" class="btn btn-warning btn-sm" title="Edit"><i class="glyphicon glyphicon-pencil"></i></a>
+                                      <a href="#" class="btn btn-danger btn-sm" title="Hapus" onclick="klik()"><i class="glyphicon glyphicon-trash"></i></a>
                                     </div>
                                   </td>
                                 </tr>
@@ -84,8 +84,8 @@
                                   <td>Rp. <?php echo number_format(3000,0,'','.'); ?>,-</td>
                                   <td>
                                     <div class="">
-                                      <a href="#" class="btn btn-warning btn-sm" title="Edit"><i class="glyphicon glyphicon-pencil"></i></a>
-                                      <a href="#" class="btn btn-danger btn-sm" title="Hapus"><i class="glyphicon glyphicon-trash"></i></a>
+                                      <a href="{{ url('master/databaku/edit_baku')}}" class="btn btn-warning btn-sm" title="Edit"><i class="glyphicon glyphicon-pencil"></i></a>
+                                      <a href="#" class="btn btn-danger btn-sm" title="Hapus" onclick="klik()"><i class="glyphicon glyphicon-trash"></i></a>
                                     </div>
                                   </td>
                                 </tr>
@@ -97,8 +97,8 @@
                                   <td>Rp. <?php echo number_format(10000,0,'','.'); ?>,-</td>
                                   <td>
                                     <div class="">
-                                      <a href="#" class="btn btn-warning btn-sm" title="Edit"><i class="glyphicon glyphicon-pencil"></i></a>
-                                      <a href="#" class="btn btn-danger btn-sm" title="Hapus"><i class="glyphicon glyphicon-trash"></i></a>
+                                      <a href="{{ url('master/databaku/edit_baku') }}" class="btn btn-warning btn-sm" title="Edit"><i class="glyphicon glyphicon-pencil"></i></a>
+                                      <a href="#" class="btn btn-danger btn-sm" title="Hapus" onclick="klik()"><i class="glyphicon glyphicon-trash"></i></a>
                                     </div>
                                   </td>
                                 </tr>
@@ -131,4 +131,28 @@
             </div>
           </div>
 
+@endsection
+@section('extra_scripts')
+<script type="text/javascript">
+function klik(){
+  swal({
+  title: "Apa anda yakin?",
+  text: "Data Yang Dihapus Tidak Dapat Dikembalikan",
+  type: "warning",
+  showCancelButton: true,
+  confirmButtonClass: "btn-danger",
+  confirmButtonText: "Yes, delete it!",
+  cancelButtonText: "Cancel",
+  closeOnConfirm: false,
+  closeOnCancel: false
+  },
+  function(isConfirm) {
+  if (isConfirm) {
+  swal("Deleted!", "Your imaginary data has been delete.", "success");
+  } else {
+  swal("Cancelled", "Your imaginary data is safe :)", "error");
+  }
+  });
+}
+</script>
 @endsection

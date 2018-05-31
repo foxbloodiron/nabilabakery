@@ -51,13 +51,13 @@
                         <div id="collapse1" class="panel-collapse collapse">
                           <div class="panel-body" style="border: 1px solid #e5e5e5;">
                             <div class="table-responsive">
-                            <table class="table tabelan table-hover table-bordered" width="100%" cellspacing="0" id="data">
+                            <table class="table tabelan table-hover table-bordered" width="100%" cellspacing="0">
                               <thead>
                                 <tr>
-                                  <th>Kode Akun</th>
-                                  <th>Nama Akun</th>
+                                  <th width="15%">Kode Akun</th>
+                                  <th width="20%">Nama Akun</th>
                                   <th>Pembukaan Akun</th>
-                                  <th width="93">Aksi</th>
+                                  <th width="15%">Aksi</th>
                                 </tr>
                               </thead>
                               <tbody>
@@ -67,9 +67,9 @@
                                   <td align="right">0,00</td>
                                   <td align="center">
                                     <div class="">
-                               <a href="#" class="btn btn-info btn-sm" title="Tambah Sub Akun"><i class="glyphicon glyphicon-plus"></i></a>
-                               <a href="#" class="btn btn-warning btn-sm" title="Edit"><i class="glyphicon glyphicon-pencil"></i></a>
-                               <a href="#" class="btn btn-danger btn-sm" title="Hapus"><i class="glyphicon glyphicon-trash"></i></a>
+                               <a href="#" class="btn btn-info btn-sm" title="Tambah Sub Akun" data-toggle="modal" data-target="#tambahharta"><i class="glyphicon glyphicon-plus"></i></a>
+                               <a href="#" class="btn btn-warning btn-sm" title="Edit" data-toggle="modal" data-target="#editharta"><i class="glyphicon glyphicon-pencil"></i></a>
+                               <a href="#" class="btn btn-danger btn-sm" title="Hapus" onclick="klik()"><i class="glyphicon glyphicon-trash"></i></a>
                               </div>
                                   </td>
                                 </tr>
@@ -79,9 +79,9 @@
                                   <td align="right">0,00</td>
                                   <td align="center">
                                    <div class="">
-                               <a href="#" class="btn btn-info btn-sm" title="Tambah Sub Akun"><i class="glyphicon glyphicon-plus"></i></a>
-                               <a href="#" class="btn btn-warning btn-sm" title="Edit"><i class="glyphicon glyphicon-pencil"></i></a>
-                               <a href="#" class="btn btn-danger btn-sm" title="Hapus"><i class="glyphicon glyphicon-trash"></i></a>
+                               <a href="#" class="btn btn-info btn-sm" title="Tambah Sub Akun" data-toggle="modal" data-target="#tambahharta"><i class="glyphicon glyphicon-plus"></i></a>
+                               <a href="#" class="btn btn-warning btn-sm" title="Edit" data-toggle="modal" data-target="#editharta"><i class="glyphicon glyphicon-pencil"></i></a>
+                               <a href="#" class="btn btn-danger btn-sm" title="Hapus" onclick="klik()"><i class="glyphicon glyphicon-trash"></i></a>
                               </div>
                                   </td>
                                 </tr>
@@ -91,9 +91,9 @@
                                   <td align="right">123.450,00</td>
                                   <td align="center">
                                     <div class="">
-                               <a href="#" class="btn btn-info btn-sm" title="Tambah Sub Akun"><i class="glyphicon glyphicon-plus"></i></a>
-                               <a href="#" class="btn btn-warning btn-sm" title="Edit"><i class="glyphicon glyphicon-pencil"></i></a>
-                               <a href="#" class="btn btn-danger btn-sm" title="Hapus"><i class="glyphicon glyphicon-trash"></i></a>
+                               <a href="#" class="btn btn-info btn-sm" title="Tambah Sub Akun" data-toggle="modal" data-target="#tambahharta"><i class="glyphicon glyphicon-plus"></i></a>
+                               <a href="#" class="btn btn-warning btn-sm" title="Edit" data-toggle="modal" data-target="#editharta"><i class="glyphicon glyphicon-pencil"></i></a>
+                               <a href="#" class="btn btn-danger btn-sm" title="Hapus" onclick="klik()"><i class="glyphicon glyphicon-trash"></i></a>
                               </div>                                    </td>
                                 </tr>
                                 <tr>
@@ -102,9 +102,9 @@
                                   <td align="right">1.230,00</td>
                                   <td align="center">
                                     <div class="">
-                               <a href="#" class="btn btn-info btn-sm" title="Tambah Sub Akun"><i class="glyphicon glyphicon-plus"></i></a>
-                               <a href="#" class="btn btn-warning btn-sm" title="Edit"><i class="glyphicon glyphicon-pencil"></i></a>
-                               <a href="#" class="btn btn-danger btn-sm" title="Hapus"><i class="glyphicon glyphicon-trash"></i></a>
+                               <a href="#" class="btn btn-info btn-sm" title="Tambah Sub Akun" data-toggle="modal" data-target="#tambahharta"><i class="glyphicon glyphicon-plus"></i></a>
+                               <a href="#" class="btn btn-warning btn-sm" title="Edit" data-toggle="modal" data-target="#editharta"><i class="glyphicon glyphicon-pencil"></i></a>
+                               <a href="#" class="btn btn-danger btn-sm" title="Hapus" onclick="klik()"><i class="glyphicon glyphicon-trash"></i></a>
                               </div>
                                   </td>
                                 </tr>
@@ -126,13 +126,13 @@
                         <div id="collapse2" class="panel-collapse collapse">
                           <div class="panel-body" style="border: 1px solid #e5e5e5;">
                             <div class="table-responsive">
-                             <table class="table tabelan table-hover table-bordered" width="100%" cellspacing="0" id="data2">
+                             <table class="table tabelan table-hover table-bordered" width="100%" cellspacing="0">
                               <thead>
                                 <tr>
-                                  <th>Kode Akun</th>
-                                  <th>Nama Akun</th>
+                                  <th width="15%">Kode Akun</th>
+                                  <th width="20%">Nama Akun</th>
                                   <th>Pembukaan Akun</th>
-                                  <th width="93">Aksi</th>
+                                  <th width="15%">Aksi</th>
                                 </tr>
                               </thead>
                               <tbody>
@@ -142,9 +142,9 @@
                                   <td align="right">0,00</td>
                                   <td align="center">
                                     <div class="">
-                               <a href="#" class="btn btn-info btn-sm" title="Tambah Sub Akun"><i class="glyphicon glyphicon-plus"></i></a>
-                               <a href="#" class="btn btn-warning btn-sm" title="Edit"><i class="glyphicon glyphicon-pencil"></i></a>
-                               <a href="#" class="btn btn-danger btn-sm" title="Hapus"><i class="glyphicon glyphicon-trash"></i></a>
+                               <a href="#" class="btn btn-info btn-sm" title="Tambah Sub Akun" data-toggle="modal" data-target="#tambahkewajiban"><i class="glyphicon glyphicon-plus"></i></a>
+                               <a href="#" class="btn btn-warning btn-sm" title="Edit" data-toggle="modal" data-target="#editkewajiban"><i class="glyphicon glyphicon-pencil"></i></a>
+                               <a href="#" class="btn btn-danger btn-sm" title="Hapus" onclick="klik()"><i class="glyphicon glyphicon-trash"></i></a>
                               </div>
                                   </td>
                                 </tr>
@@ -154,9 +154,9 @@
                                   <td align="right">0,00</td>
                                   <td align="center">
                                     <div class="">
-                               <a href="#" class="btn btn-info btn-sm" title="Tambah Sub Akun"><i class="glyphicon glyphicon-plus"></i></a>
-                               <a href="#" class="btn btn-warning btn-sm" title="Edit"><i class="glyphicon glyphicon-pencil"></i></a>
-                               <a href="#" class="btn btn-danger btn-sm" title="Hapus"><i class="glyphicon glyphicon-trash"></i></a>
+                               <a href="#" class="btn btn-info btn-sm" title="Tambah Sub Akun" data-toggle="modal" data-target="#tambahkewajiban"><i class="glyphicon glyphicon-plus"></i></a>
+                               <a href="#" class="btn btn-warning btn-sm" title="Edit" data-toggle="modal" data-target="#editkewajiban"><i class="glyphicon glyphicon-pencil"></i></a>
+                               <a href="#" class="btn btn-danger btn-sm" title="Hapus" onclick="klik()"><i class="glyphicon glyphicon-trash"></i></a>
                               </div>
                                   </td>
                                 </tr>
@@ -166,9 +166,9 @@
                                   <td align="right">123.450,00</td>
                                   <td align="center">
                                     <div class="">
-                               <a href="#" class="btn btn-info btn-sm" title="Tambah Sub Akun"><i class="glyphicon glyphicon-plus"></i></a>
-                               <a href="#" class="btn btn-warning btn-sm" title="Edit"><i class="glyphicon glyphicon-pencil"></i></a>
-                               <a href="#" class="btn btn-danger btn-sm" title="Hapus"><i class="glyphicon glyphicon-trash"></i></a>
+                               <a href="#" class="btn btn-info btn-sm" title="Tambah Sub Akun" data-toggle="modal" data-target="#tambahkewajiban"><i class="glyphicon glyphicon-plus"></i></a>
+                               <a href="#" class="btn btn-warning btn-sm" title="Edit" data-toggle="modal" data-target="#editkewajiban"><i class="glyphicon glyphicon-pencil"></i></a>
+                               <a href="#" class="btn btn-danger btn-sm" title="Hapus" onclick="klik()"><i class="glyphicon glyphicon-trash"></i></a>
                               </div>
                                   </td>
                                 </tr>
@@ -178,9 +178,9 @@
                                   <td align="right">1.230,00</td>
                                   <td align="center">
                                     <div class="">
-                               <a href="#" class="btn btn-info btn-sm" title="Tambah Sub Akun"><i class="glyphicon glyphicon-plus"></i></a>
-                               <a href="#" class="btn btn-warning btn-sm" title="Edit"><i class="glyphicon glyphicon-pencil"></i></a>
-                               <a href="#" class="btn btn-danger btn-sm" title="Hapus"><i class="glyphicon glyphicon-trash"></i></a>
+                               <a href="#" class="btn btn-info btn-sm" title="Tambah Sub Akun" data-toggle="modal" data-target="#tambahkewajiban"><i class="glyphicon glyphicon-plus"></i></a>
+                               <a href="#" class="btn btn-warning btn-sm" title="Edit" data-toggle="modal" data-target="#editkewajiban"><i class="glyphicon glyphicon-pencil"></i></a>
+                               <a href="#" class="btn btn-danger btn-sm" title="Hapus" onclick="klik()"><i class="glyphicon glyphicon-trash"></i></a>
                               </div>
                                   </td>
                                 </tr>
@@ -202,13 +202,13 @@
                         <div id="collapse3" class="panel-collapse collapse">
                           <div class="panel-body" style="border: 1px solid #e5e5e5;">
                             <div class="table-responsive">
-                              <table class="table tabelan table-hover table-bordered" width="100%" cellspacing="0" id="data3">
+                              <table class="table tabelan table-hover table-bordered" width="100%" cellspacing="0">
                                 <thead>
                                   <tr>
-                                    <th>Kode Akun</th>
-                                    <th>Nama Akun</th>
+                                    <th width="15%">Kode Akun</th>
+                                    <th width="20%">Nama Akun</th>
                                     <th>Pembukaan Akun</th>
-                                    <th width="93">Aksi</th>
+                                    <th width="15%">Aksi</th>
                                   </tr>
                                 </thead>
                                 <tbody>
@@ -218,9 +218,9 @@
                                     <td align="right">0,00</td>
                                     <td align="center">
                                       <div class="">
-                               <a href="#" class="btn btn-info btn-sm" title="Tambah Sub Akun"><i class="glyphicon glyphicon-plus"></i></a>
-                               <a href="#" class="btn btn-warning btn-sm" title="Edit"><i class="glyphicon glyphicon-pencil"></i></a>
-                               <a href="#" class="btn btn-danger btn-sm" title="Hapus"><i class="glyphicon glyphicon-trash"></i></a>
+                               <a href="#" class="btn btn-info btn-sm" title="Tambah Sub Akun" data-toggle="modal" data-target="#tambahmodal"><i class="glyphicon glyphicon-plus"></i></a>
+                               <a href="#" class="btn btn-warning btn-sm" title="Edit" data-toggle="modal" data-target="#editmodal"><i class="glyphicon glyphicon-pencil"></i></a>
+                               <a href="#" class="btn btn-danger btn-sm" title="Hapus" onclick="klik()"><i class="glyphicon glyphicon-trash"></i></a>
                               </div>
                                     </td>
                                   </tr>
@@ -230,9 +230,9 @@
                                     <td align="right">0,00</td>
                                     <td align="center">
                                       <div class="">
-                               <a href="#" class="btn btn-info btn-sm" title="Tambah Sub Akun"><i class="glyphicon glyphicon-plus"></i></a>
-                               <a href="#" class="btn btn-warning btn-sm" title="Edit"><i class="glyphicon glyphicon-pencil"></i></a>
-                               <a href="#" class="btn btn-danger btn-sm" title="Hapus"><i class="glyphicon glyphicon-trash"></i></a>
+                               <a href="#" class="btn btn-info btn-sm" title="Tambah Sub Akun" data-toggle="modal" data-target="#tambahmodal"><i class="glyphicon glyphicon-plus"></i></a>
+                               <a href="#" class="btn btn-warning btn-sm" title="Edit" data-toggle="modal" data-target="#editmodal"><i class="glyphicon glyphicon-pencil"></i></a>
+                               <a href="#" class="btn btn-danger btn-sm" title="Hapus" onclick="klik()"><i class="glyphicon glyphicon-trash"></i></a>
                               </div>
                                     </td>
                                   </tr>
@@ -242,9 +242,9 @@
                                     <td align="right">123.450,00</td>
                                     <td align="center">
                                       <div class="">
-                               <a href="#" class="btn btn-info btn-sm" title="Tambah Sub Akun"><i class="glyphicon glyphicon-plus"></i></a>
-                               <a href="#" class="btn btn-warning btn-sm" title="Edit"><i class="glyphicon glyphicon-pencil"></i></a>
-                               <a href="#" class="btn btn-danger btn-sm" title="Hapus"><i class="glyphicon glyphicon-trash"></i></a>
+                               <a href="#" class="btn btn-info btn-sm" title="Tambah Sub Akun" data-toggle="modal" data-target="#tambahmodal"><i class="glyphicon glyphicon-plus"></i></a>
+                               <a href="#" class="btn btn-warning btn-sm" title="Edit" data-toggle="modal" data-target="#editmodal"><i class="glyphicon glyphicon-pencil"></i></a>
+                               <a href="#" class="btn btn-danger btn-sm" title="Hapus" onclick="klik()"><i class="glyphicon glyphicon-trash"></i></a>
                               </div>
                                     </td>
                                   </tr>
@@ -254,9 +254,9 @@
                                     <td align="right">1.230,00</td>
                                     <td align="center">
                                       <div class="">
-                               <a href="#" class="btn btn-info btn-sm" title="Tambah Sub Akun"><i class="glyphicon glyphicon-plus"></i></a>
-                               <a href="#" class="btn btn-warning btn-sm" title="Edit"><i class="glyphicon glyphicon-pencil"></i></a>
-                               <a href="#" class="btn btn-danger btn-sm" title="Hapus"><i class="glyphicon glyphicon-trash"></i></a>
+                               <a href="#" class="btn btn-info btn-sm" title="Tambah Sub Akun" data-toggle="modal" data-target="#tambahmodal"><i class="glyphicon glyphicon-plus"></i></a>
+                               <a href="#" class="btn btn-warning btn-sm" title="Edit" data-toggle="modal" data-target="#editmodal"><i class="glyphicon glyphicon-pencil"></i></a>
+                               <a href="#" class="btn btn-danger btn-sm" title="Hapus" onclick="klik()"><i class="glyphicon glyphicon-trash"></i></a>
                               </div>
                                     </td>
                                   </tr>
@@ -274,4 +274,36 @@
                                     </div>
                                          </div>
                             </div>
+
+                            @include('master.datakeuangan.modal_edit_harta')
+                            @include('master.datakeuangan.modal_tambah_harta')
+                            @include('master.datakeuangan.modal_edit_kewajiban')
+                            @include('master.datakeuangan.modal_tambah_kewajiban')
+                            @include('master.datakeuangan.modal_edit_modal')
+                            @include('master.datakeuangan.modal_tambah_modal')
+
+@endsection
+@section('extra_scripts')
+<script type="text/javascript">
+function klik(){
+  swal({
+  title: "Apa anda yakin?",
+  text: "Data Yang Dihapus Tidak Dapat Dikembalikan",
+  type: "warning",
+  showCancelButton: true,
+  confirmButtonClass: "btn-danger",
+  confirmButtonText: "Yes, delete it!",
+  cancelButtonText: "Cancel",
+  closeOnConfirm: false,
+  closeOnCancel: false
+  },
+  function(isConfirm) {
+  if (isConfirm) {
+  swal("Deleted!", "Your imaginary data has been delete.", "success");
+  } else {
+  swal("Cancelled", "Your imaginary data is safe :)", "error");
+  }
+  });
+}
+</script>
 @endsection
