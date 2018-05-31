@@ -64,14 +64,12 @@
         $.extend($.fn.dataTableExt.oStdClasses, extensions);
         // Used when bJQueryUI is true
         $.extend($.fn.dataTableExt.oJUIClasses, extensions);
-<<<<<<< HEAD
-        $('#data').dataTable({
-=======
+
+        
 
         console.log('a');
 
         $('.data-table').dataTable({
->>>>>>> cbffec133db4f1756426144fc52ba2c1ec83baf9
               "responsive":true,
 
               "pageLength": 10,
@@ -88,44 +86,8 @@
                         "next": "Selanjutnya",
                      }
               }
-<<<<<<< HEAD
+
               });
-              $('#data2').dataTable({
-                    "responsive":true,
-
-                    "pageLength": 10,
-                  "lengthMenu": [[10, 20, 50, - 1], [10, 20, 50, "All"]],
-                  "language": {
-                      "searchPlaceholder": "Cari Data",
-                      "emptyTable": "Tidak ada data",
-                      "sInfo": "Menampilkan _START_ - _END_ Dari _TOTAL_ Data",
-                      "sSearch": '<i class="fa fa-search"></i>',
-                      "sLengthMenu": "Menampilkan &nbsp; _MENU_ &nbsp; Data",
-                      "infoEmpty": "",
-                      "paginate": {
-                              "previous": "Sebelumnya",
-                              "next": "Selanjutnya",
-                           }
-                    }
-                    });
-                    $('#data3').dataTable({
-                          "responsive":true,
-
-                          "pageLength": 10,
-                        "lengthMenu": [[10, 20, 50, - 1], [10, 20, 50, "All"]],
-                        "language": {
-                            "searchPlaceholder": "Cari Data",
-                            "emptyTable": "Tidak ada data",
-                            "sInfo": "Menampilkan _START_ - _END_ Dari _TOTAL_ Data",
-                            "sSearch": '<i class="fa fa-search"></i>',
-                            "sLengthMenu": "Menampilkan &nbsp; _MENU_ &nbsp; Data",
-                            "infoEmpty": "",
-                            "paginate": {
-                                    "previous": "Sebelumnya",
-                                    "next": "Selanjutnya",
-                                 }
-                          }
-                          });
 
               $('.datepicker').datepicker({
                 format: "mm",
@@ -145,9 +107,9 @@
                 minViewMode: "months",
                 format:"dd/mm/yyyy"
               });
-=======
 
-            });
+
+            
         
             $('.datepicker').datepicker({
               format: "mm/yyyy",
@@ -157,5 +119,4 @@
             $('.datepicker2').datepicker({
               format:"dd/mm/yyyy"
             });
->>>>>>> cbffec133db4f1756426144fc52ba2c1ec83baf9
     </script>
