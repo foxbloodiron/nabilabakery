@@ -261,6 +261,8 @@ Route::get('not-allowed', 'mMemberController@notAllowed');
 	Route::get('/hrd/datajabatan/edit_jabatan', 'HrdController@edit_jabatan');
 	Route::get('/hrd/manajemenkpipegawai/kpi', 'HrdController@kpi');
 	Route::get('/hrd/payroll/payroll', 'HrdController@payroll');
+  Route::get('/hrd/payroll/table', 'HrdController@table');
+  Route::get('/hrd/payroll/tambah_payroll', 'HrdController@tambah_payroll');
 	Route::get('/hrd/recruitment/rekrut', 'HrdController@rekrut');
 	Route::get('/hrd/datakaryawan/karyawan', 'HrdController@karyawan');
 	Route::get('/hrd/dataadministrasi/admin', 'HrdController@admin');

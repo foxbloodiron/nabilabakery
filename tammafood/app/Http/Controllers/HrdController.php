@@ -39,6 +39,19 @@ class HrdController extends Controller
         return view('hrd/payroll/payroll');
 
     }
+
+    public function table()
+    {
+        return view('hrd/payroll/payroll');
+
+    }
+
+    public function tambah_payroll()
+    {
+        return view('hrd/payroll/payroll');
+
+    }
+    
     public function karyawan()
     {
         return view('hrd/datakaryawan/karyawan');
