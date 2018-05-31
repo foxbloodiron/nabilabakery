@@ -50,6 +50,7 @@ Route::get('not-allowed', 'mMemberController@notAllowed');
 	Route::get('/master/datakeuangan/keuangan', 'MasterController@keuangan');
 	Route::get('/master/datatransaksi/transaksi', 'MasterController@transaksi');
 	Route::get('/master/datasuplier/tambah_suplier', 'MasterController@tambah_suplier');
+	Route::get('/master/datasuplier/edit_suplier', 'MasterController@edit_suplier');
 	Route::get('/master/datacust/tambah_cust', 'MasterController@tambah_cust');
 	Route::get('/master/datatransaksi/tambah_transaksi', 'MasterController@tambah_transaksi');
 	Route::get('/master/datapegawai/tambah_pegawai', 'MasterController@tambah_pegawai');
