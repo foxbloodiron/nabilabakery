@@ -6,7 +6,9 @@
             <div class="topbar-main"><a id="menu-toggle" href="#" class="hidden-xs"><i class="fa fa-bars"></i></a>
 
                 <form id="topbar-search" action="#" method="" class="hidden-sm hidden-xs">
-                    <div class="input-icon right text-white"><a href="#"><i class="fa fa-search"></i></a><input type="text" placeholder="Search here..." onkeyup="myFunction()" id="nav-search" class="form-control text-white"/></div>
+                    <div class="input-icon right text-white"><a href="#"><i class="fa fa-search"></i></a>
+                        <input type="text" placeholder="Search here..." onkeyup="myFunction()" id="nav-search" class="form-control text-white"/>
+                    </div>
                 </form>
                 <div class="news-update-box hidden-xs"><span class="text-uppercase mrm pull-left text-white">News:</span>
                 </div>
